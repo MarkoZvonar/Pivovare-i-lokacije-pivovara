@@ -1,0 +1,1040 @@
+[
+  {
+    "piva": [
+      {
+        "ibu": 25,
+        "stil": { "naziv": "Amber Ale", "id_stila": 8 },
+        "naziv": "Velvet Hour Amber Ale",
+        "id_piva": 30,
+        "boja_ebc": 27,
+        "alkohol_postotak": 4.6,
+        "godina_lansiranja": 2016
+      },
+      {
+        "ibu": 35,
+        "stil": { "naziv": "Saison", "id_stila": 9 },
+        "naziv": "Quiet Harbor Saison",
+        "id_piva": 33,
+        "boja_ebc": 15,
+        "alkohol_postotak": 5.3,
+        "godina_lansiranja": 2015
+      }
+    ],
+    "naziv": "3 Ravens",
+    "telefon": "+61 424 707 592",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Thornbury",
+          "regija": {
+            "naziv": "VIC",
+            "drzava": { "naziv": "Australia", "iso_kod": "AU", "id_drzave": 8 },
+            "id_regije": 12
+          },
+          "id_grada": 15
+        },
+        "adresa_1": "260 Dundas Street",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": 145.026872,
+        "geo_sirina": -37.755894,
+        "id_lokacije": 17,
+        "postanski_broj": "3071"
+      }
+    ],
+    "id_pivovare": "50f26a2b-242d-40af-b78b-cf975ce37761",
+    "tip_pivovare": {
+      "opis": "Mala nezavisna pivovara",
+      "naziv": "micro",
+      "id_tipa": 1
+    },
+    "web_stranica": "https://3ravens.com.au/index",
+    "godina_osnutka": 2009,
+    "ima_razgledavanje": false,
+    "godisnja_proizvodnja_hl": 4400
+  },
+  {
+    "piva": [
+      {
+        "ibu": 39,
+        "stil": { "naziv": "Pale Ale", "id_stila": 4 },
+        "naziv": "Golden Field Pale Ale",
+        "id_piva": 13,
+        "boja_ebc": 17,
+        "alkohol_postotak": 4.9,
+        "godina_lansiranja": 2020
+      },
+      {
+        "ibu": 59,
+        "stil": { "naziv": "Stout", "id_stila": 5 },
+        "naziv": "Cold Spring Stout",
+        "id_piva": 17,
+        "boja_ebc": 74,
+        "alkohol_postotak": 7.8,
+        "godina_lansiranja": 2015
+      },
+      {
+        "ibu": 14,
+        "stil": { "naziv": "Weissbier", "id_stila": 7 },
+        "naziv": "Crooked Fence Weissbier",
+        "id_piva": 25,
+        "boja_ebc": 9,
+        "alkohol_postotak": 5.2,
+        "godina_lansiranja": 2016
+      }
+    ],
+    "naziv": "4 Stitch Brewing Co - Brewery & Taproom",
+    "telefon": "4252247583",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Mill Creek",
+          "regija": {
+            "naziv": "Washington",
+            "drzava": {
+              "naziv": "United States",
+              "iso_kod": "US",
+              "id_drzave": 1
+            },
+            "id_regije": 1
+          },
+          "id_grada": 1
+        },
+        "adresa_1": "16709 9th Ave SE",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -122.219914,
+        "geo_sirina": 47.846714,
+        "id_lokacije": 1,
+        "postanski_broj": "98012-6309"
+      }
+    ],
+    "id_pivovare": "7c669ae6-460d-476b-bc56-0b4d566a152c",
+    "tip_pivovare": {
+      "opis": "Pivnica/točionica uz pivovaru",
+      "naziv": "taproom",
+      "id_tipa": 11
+    },
+    "web_stranica": "https://www.4stitchbrewing.com",
+    "godina_osnutka": 2015,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 2600
+  },
+  {
+    "piva": [
+      {
+        "ibu": 23,
+        "stil": { "naziv": "Lager", "id_stila": 1 },
+        "naziv": "Blue Anchor Lager",
+        "id_piva": 1,
+        "boja_ebc": 7,
+        "alkohol_postotak": 4.7,
+        "godina_lansiranja": 2015
+      },
+      {
+        "ibu": 31,
+        "stil": { "naziv": "Pale Ale", "id_stila": 4 },
+        "naziv": "Harbor Pale Ale",
+        "id_piva": 14,
+        "boja_ebc": 10,
+        "alkohol_postotak": 5.5,
+        "godina_lansiranja": 2024
+      },
+      {
+        "ibu": 22,
+        "stil": { "naziv": "Saison", "id_stila": 9 },
+        "naziv": "Thistle Down Saison",
+        "id_piva": 32,
+        "boja_ebc": 10,
+        "alkohol_postotak": 6.9,
+        "godina_lansiranja": 2016
+      }
+    ],
+    "naziv": "666 Brewing",
+    "telefon": "+64 7 282 0254",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Hamilton",
+          "regija": {
+            "naziv": "Waikato Region",
+            "drzava": {
+              "naziv": "New Zealand",
+              "iso_kod": "NZ",
+              "id_drzave": 9
+            },
+            "id_regije": 13
+          },
+          "id_grada": 16
+        },
+        "adresa_1": "34 Mahana Road",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": 175.251568,
+        "geo_sirina": -37.758944,
+        "id_lokacije": 18,
+        "postanski_broj": "3200"
+      }
+    ],
+    "id_pivovare": "c02412dc-7507-4047-9497-9066e454c4e1",
+    "tip_pivovare": {
+      "opis": "Zatvorena pivovara",
+      "naziv": "closed",
+      "id_tipa": 10
+    },
+    "web_stranica": "http://www.brewaucracy.co.nz/",
+    "godina_osnutka": 2015,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 2193
+  },
+  {
+    "piva": [
+      {
+        "ibu": 53,
+        "stil": { "naziv": "Stout", "id_stila": 5 },
+        "naziv": "Driftwood Stout",
+        "id_piva": 18,
+        "boja_ebc": 120,
+        "alkohol_postotak": 6.9,
+        "godina_lansiranja": 2024
+      },
+      {
+        "ibu": 13,
+        "stil": { "naziv": "Weissbier", "id_stila": 7 },
+        "naziv": "Lucky Heron Weissbier",
+        "id_piva": 27,
+        "boja_ebc": 12,
+        "alkohol_postotak": 5.5,
+        "godina_lansiranja": 2020
+      }
+    ],
+    "naziv": "8 Wired",
+    "telefon": "+64 9 945 3983",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Warkworth",
+          "regija": {
+            "naziv": "Auckland",
+            "drzava": {
+              "naziv": "New Zealand",
+              "iso_kod": "NZ",
+              "id_drzave": 9
+            },
+            "id_regije": 14
+          },
+          "id_grada": 17
+        },
+        "adresa_1": "26 Glenmore Drive",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": 174.654817,
+        "geo_sirina": -36.409042,
+        "id_lokacije": 19,
+        "postanski_broj": "0910"
+      }
+    ],
+    "id_pivovare": "2a7c0677-5ac3-4ed9-917e-b6214c389ded",
+    "tip_pivovare": {
+      "opis": "Mala nezavisna pivovara",
+      "naziv": "micro",
+      "id_tipa": 1
+    },
+    "web_stranica": "http://8wired.co.nz/",
+    "godina_osnutka": 2007,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 1300
+  },
+  {
+    "piva": [
+      {
+        "ibu": 42,
+        "stil": { "naziv": "Pilsner", "id_stila": 2 },
+        "naziv": "Lazy River Pilsner",
+        "id_piva": 6,
+        "boja_ebc": 7,
+        "alkohol_postotak": 5.2,
+        "godina_lansiranja": 1990
+      },
+      {
+        "ibu": 30,
+        "stil": { "naziv": "Amber Ale", "id_stila": 8 },
+        "naziv": "Lone Pine Amber Ale",
+        "id_piva": 31,
+        "boja_ebc": 33,
+        "alkohol_postotak": 5.5,
+        "godina_lansiranja": 2015
+      }
+    ],
+    "naziv": "Brouwerij 't IJ",
+    "telefon": "+31 020 261 9801",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Amsterdam",
+          "regija": {
+            "naziv": "Noord-Holland",
+            "drzava": {
+              "naziv": "Netherlands",
+              "iso_kod": "NL",
+              "id_drzave": 4
+            },
+            "id_regije": 8
+          },
+          "id_grada": 11
+        },
+        "adresa_1": "Funenkade 7",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": 4.926425,
+        "geo_sirina": 52.366691,
+        "id_lokacije": 12,
+        "postanski_broj": "1018 AL"
+      }
+    ],
+    "id_pivovare": "84824834-3233-4947-ad20-579b7141fc24",
+    "tip_pivovare": {
+      "opis": "Regionalna pivovara",
+      "naziv": "regional",
+      "id_tipa": 3
+    },
+    "web_stranica": "https://www.brouwerijhetij.nl/proeflokalen/proeflokaal-de-molen",
+    "godina_osnutka": 1982,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 50400
+  },
+  {
+    "piva": [
+      {
+        "ibu": 57,
+        "stil": { "naziv": "IPA", "id_stila": 3 },
+        "naziv": "Silent Orchard IPA",
+        "id_piva": 11,
+        "boja_ebc": 29,
+        "alkohol_postotak": 6.0,
+        "godina_lansiranja": 1997
+      },
+      {
+        "ibu": 43,
+        "stil": { "naziv": "Stout", "id_stila": 5 },
+        "naziv": "Old Lantern Stout",
+        "id_piva": 21,
+        "boja_ebc": 107,
+        "alkohol_postotak": 7.1,
+        "godina_lansiranja": 2006
+      },
+      {
+        "ibu": 7,
+        "stil": { "naziv": "Gose", "id_stila": 10 },
+        "naziv": "Open Road Gose",
+        "id_piva": 37,
+        "boja_ebc": 14,
+        "alkohol_postotak": 4.4,
+        "godina_lansiranja": 2012
+      }
+    ],
+    "naziv": "Dogfish Head Craft Brewery",
+    "telefon": "3026841000",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Rehoboth Beach",
+          "regija": {
+            "naziv": "Delaware",
+            "drzava": {
+              "naziv": "United States",
+              "iso_kod": "US",
+              "id_drzave": 1
+            },
+            "id_regije": 3
+          },
+          "id_grada": 4
+        },
+        "adresa_1": "320 Rehoboth Ave",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -75.087315,
+        "geo_sirina": 38.715177,
+        "id_lokacije": 4,
+        "postanski_broj": "19971-3108"
+      },
+      {
+        "grad": {
+          "naziv": "Milton",
+          "regija": {
+            "naziv": "Delaware",
+            "drzava": {
+              "naziv": "United States",
+              "iso_kod": "US",
+              "id_drzave": 1
+            },
+            "id_regije": 3
+          },
+          "id_grada": 5
+        },
+        "adresa_1": "6 Cannery Village Ctr",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -75.311582,
+        "geo_sirina": 38.766912,
+        "id_lokacije": 5,
+        "postanski_broj": "19968-1308"
+      }
+    ],
+    "id_pivovare": "281e6980-e2e2-4493-9896-3517e8cafe21",
+    "tip_pivovare": {
+      "opis": "Regionalna pivovara",
+      "naziv": "regional",
+      "id_tipa": 3
+    },
+    "web_stranica": "http://www.dogfish.com",
+    "godina_osnutka": 1981,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 363600
+  },
+  {
+    "piva": [
+      {
+        "ibu": 44,
+        "stil": { "naziv": "Pilsner", "id_stila": 2 },
+        "naziv": "Juniper Row Pilsner",
+        "id_piva": 4,
+        "boja_ebc": 6,
+        "alkohol_postotak": 5.0,
+        "godina_lansiranja": 2020
+      },
+      {
+        "ibu": 14,
+        "stil": { "naziv": "Weissbier", "id_stila": 7 },
+        "naziv": "Saffron Sky Weissbier",
+        "id_piva": 26,
+        "boja_ebc": 11,
+        "alkohol_postotak": 5.6,
+        "godina_lansiranja": 2023
+      }
+    ],
+    "naziv": "Dois Corvos Cervejeira, Lda.",
+    "telefon": "+351 211 331 093",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Lisboa",
+          "regija": {
+            "naziv": "Lisboa",
+            "drzava": { "naziv": "Portugal", "iso_kod": "PT", "id_drzave": 10 },
+            "id_regije": 15
+          },
+          "id_grada": 18
+        },
+        "adresa_1": "Rua Capitão Leitão, 94",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -9.105483,
+        "geo_sirina": 38.738267,
+        "id_lokacije": 20,
+        "postanski_broj": "1950-052"
+      }
+    ],
+    "id_pivovare": "27d18114-31bb-4baf-b330-71bcba80cc8a",
+    "tip_pivovare": {
+      "opis": "Mala nezavisna pivovara",
+      "naziv": "micro",
+      "id_tipa": 1
+    },
+    "web_stranica": "https://www.doiscorvos.pt",
+    "godina_osnutka": 2014,
+    "ima_razgledavanje": false,
+    "godisnja_proizvodnja_hl": 1400
+  },
+  {
+    "piva": [
+      {
+        "ibu": 40,
+        "stil": { "naziv": "Pale Ale", "id_stila": 4 },
+        "naziv": "Sunday Fields Pale Ale",
+        "id_piva": 15,
+        "boja_ebc": 11,
+        "alkohol_postotak": 5.7,
+        "godina_lansiranja": 2014
+      },
+      {
+        "ibu": 5,
+        "stil": { "naziv": "Gose", "id_stila": 10 },
+        "naziv": "Copper Kettle Gose",
+        "id_piva": 36,
+        "boja_ebc": 9,
+        "alkohol_postotak": 4.0,
+        "godina_lansiranja": 1986
+      }
+    ],
+    "naziv": "Founders Brewing Co",
+    "telefon": "6167761195",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Grand Rapids",
+          "regija": {
+            "naziv": "Michigan",
+            "drzava": {
+              "naziv": "United States",
+              "iso_kod": "US",
+              "id_drzave": 1
+            },
+            "id_regije": 2
+          },
+          "id_grada": 2
+        },
+        "adresa_1": "235 Grandville Ave SW",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -85.676575,
+        "geo_sirina": 42.952496,
+        "id_lokacije": 2,
+        "postanski_broj": "49503-4037"
+      }
+    ],
+    "id_pivovare": "e4da6e5d-1e64-4701-ab21-786b0f3a1ff4",
+    "tip_pivovare": {
+      "opis": "Regionalna pivovara",
+      "naziv": "regional",
+      "id_tipa": 3
+    },
+    "web_stranica": "http://www.foundersbrewing.com",
+    "godina_osnutka": 1982,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 53600
+  },
+  {
+    "piva": [
+      {
+        "ibu": 46,
+        "stil": { "naziv": "IPA", "id_stila": 3 },
+        "naziv": "Old Mill IPA",
+        "id_piva": 8,
+        "boja_ebc": 15,
+        "alkohol_postotak": 7.1,
+        "godina_lansiranja": 2005
+      },
+      {
+        "ibu": 35,
+        "stil": { "naziv": "Saison", "id_stila": 9 },
+        "naziv": "Little Falcon Saison",
+        "id_piva": 34,
+        "boja_ebc": 11,
+        "alkohol_postotak": 6.4,
+        "godina_lansiranja": 2017
+      }
+    ],
+    "naziv": "Gladstone Brewing Company",
+    "telefon": "12508711111",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Courtenay",
+          "regija": {
+            "naziv": "British Columbia",
+            "drzava": { "naziv": "Canada", "iso_kod": "CA", "id_drzave": 6 },
+            "id_regije": 10
+          },
+          "id_grada": 13
+        },
+        "adresa_1": "244 4th Street",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -124.998183,
+        "geo_sirina": 49.691771,
+        "id_lokacije": 15,
+        "postanski_broj": "V9N 1G6"
+      }
+    ],
+    "id_pivovare": "ed1a10cd-0170-48d1-ae91-8c54e37e98b5",
+    "tip_pivovare": {
+      "opis": "Mala nezavisna pivovara",
+      "naziv": "micro",
+      "id_tipa": 1
+    },
+    "web_stranica": "http://www.gladstonebrewing.ca/",
+    "godina_osnutka": 2002,
+    "ima_razgledavanje": false,
+    "godisnja_proizvodnja_hl": 4900
+  },
+  {
+    "piva": [
+      {
+        "ibu": 20,
+        "stil": { "naziv": "Lager", "id_stila": 1 },
+        "naziv": "Cobble Street Lager",
+        "id_piva": 2,
+        "boja_ebc": 12,
+        "alkohol_postotak": 4.6,
+        "godina_lansiranja": 2020
+      },
+      {
+        "ibu": 31,
+        "stil": { "naziv": "Pilsner", "id_stila": 2 },
+        "naziv": "Iron Bridge Pilsner",
+        "id_piva": 5,
+        "boja_ebc": 7,
+        "alkohol_postotak": 4.5,
+        "godina_lansiranja": 1978
+      },
+      {
+        "ibu": 11,
+        "stil": { "naziv": "Gose", "id_stila": 10 },
+        "naziv": "Slow River Gose",
+        "id_piva": 35,
+        "boja_ebc": 8,
+        "alkohol_postotak": 4.4,
+        "godina_lansiranja": 1945
+      }
+    ],
+    "naziv": "Gösser Brauerei (Heineken)",
+    "telefon": "+438102069791",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Leoben",
+          "regija": {
+            "naziv": "Steiermark",
+            "drzava": { "naziv": "Austria", "iso_kod": "AT", "id_drzave": 7 },
+            "id_regije": 11
+          },
+          "id_grada": 14
+        },
+        "adresa_1": "Brauhausgasse 1",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": 15.093344,
+        "geo_sirina": 47.362557,
+        "id_lokacije": 16,
+        "postanski_broj": "8700"
+      }
+    ],
+    "id_pivovare": "fcd9312c-7531-4801-b481-52f4267cf628",
+    "tip_pivovare": {
+      "opis": "Velika industrijska pivovara",
+      "naziv": "large",
+      "id_tipa": 5
+    },
+    "web_stranica": "https://www.goesser.at",
+    "godina_osnutka": 1910,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 3472100
+  },
+  {
+    "piva": [
+      {
+        "ibu": 33,
+        "stil": { "naziv": "Pilsner", "id_stila": 2 },
+        "naziv": "Whistling Kite Pilsner",
+        "id_piva": 7,
+        "boja_ebc": 10,
+        "alkohol_postotak": 5.3,
+        "godina_lansiranja": 1997
+      },
+      {
+        "ibu": 59,
+        "stil": { "naziv": "Stout", "id_stila": 5 },
+        "naziv": "Foggy Ridge Stout",
+        "id_piva": 20,
+        "boja_ebc": 76,
+        "alkohol_postotak": 5.1,
+        "godina_lansiranja": 2024
+      },
+      {
+        "ibu": 34,
+        "stil": { "naziv": "Porter", "id_stila": 6 },
+        "naziv": "Wandering Crow Porter",
+        "id_piva": 23,
+        "boja_ebc": 50,
+        "alkohol_postotak": 5.4,
+        "godina_lansiranja": 1986
+      }
+    ],
+    "naziv": "Guinness Brewing (Diageo)",
+    "telefon": "35314084800",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Dublin",
+          "regija": {
+            "naziv": "Dublin",
+            "drzava": { "naziv": "Ireland", "iso_kod": "IE", "id_drzave": 3 },
+            "id_regije": 7
+          },
+          "id_grada": 10
+        },
+        "adresa_1": "St. James's Gate",
+        "adresa_2": "Dublin 8",
+        "adresa_3": null,
+        "geo_duzina": -6.28673,
+        "geo_sirina": 53.341933,
+        "id_lokacije": 11,
+        "postanski_broj": "D08 VF8H"
+      }
+    ],
+    "id_pivovare": "b82b05d8-ca46-4954-b9a9-bb91a98406e5",
+    "tip_pivovare": {
+      "opis": "Velika industrijska pivovara",
+      "naziv": "large",
+      "id_tipa": 5
+    },
+    "web_stranica": "https://www.guinness-storehouse.com/en",
+    "godina_osnutka": 1802,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 1460900
+  },
+  {
+    "piva": [
+      {
+        "ibu": 43,
+        "stil": { "naziv": "IPA", "id_stila": 3 },
+        "naziv": "Mossy Stone IPA",
+        "id_piva": 9,
+        "boja_ebc": 23,
+        "alkohol_postotak": 6.5,
+        "godina_lansiranja": 1954
+      },
+      {
+        "ibu": 36,
+        "stil": { "naziv": "Porter", "id_stila": 6 },
+        "naziv": "Distant Shore Porter",
+        "id_piva": 22,
+        "boja_ebc": 50,
+        "alkohol_postotak": 5.6,
+        "godina_lansiranja": 1958
+      }
+    ],
+    "naziv": "Heineken",
+    "telefon": "+31 020 205 0593",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Amsterdam",
+          "regija": {
+            "naziv": "Noord-Holland",
+            "drzava": {
+              "naziv": "Netherlands",
+              "iso_kod": "NL",
+              "id_drzave": 4
+            },
+            "id_regije": 8
+          },
+          "id_grada": 11
+        },
+        "adresa_1": "Stadhouderskade 78",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": 4.891825,
+        "geo_sirina": 52.357831,
+        "id_lokacije": 13,
+        "postanski_broj": "1072 AE"
+      }
+    ],
+    "id_pivovare": "c4b543bd-313d-4cf7-b9c6-b8f58e326d58",
+    "tip_pivovare": {
+      "opis": "Velika industrijska pivovara",
+      "naziv": "large",
+      "id_tipa": 5
+    },
+    "web_stranica": "https://www.heinekenexperience.com/",
+    "godina_osnutka": 1876,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 4758600
+  },
+  {
+    "piva": [
+      {
+        "ibu": 50,
+        "stil": { "naziv": "Stout", "id_stila": 5 },
+        "naziv": "Lantern Hill Stout",
+        "id_piva": 19,
+        "boja_ebc": 93,
+        "alkohol_postotak": 8.0,
+        "godina_lansiranja": 2021
+      },
+      {
+        "ibu": 13,
+        "stil": { "naziv": "Weissbier", "id_stila": 7 },
+        "naziv": "Amber Dusk Weissbier",
+        "id_piva": 28,
+        "boja_ebc": 9,
+        "alkohol_postotak": 5.5,
+        "godina_lansiranja": 2017
+      }
+    ],
+    "naziv": "Huisbrouwerij De Halve Maan",
+    "telefon": "+32 50 44 42 25",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Brugge",
+          "regija": {
+            "naziv": "Vlaanderen",
+            "drzava": { "naziv": "Belgium", "iso_kod": "BE", "id_drzave": 5 },
+            "id_regije": 9
+          },
+          "id_grada": 12
+        },
+        "adresa_1": "26 Walplein",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": 3.224178,
+        "geo_sirina": 51.202447,
+        "id_lokacije": 14,
+        "postanski_broj": "8000"
+      }
+    ],
+    "id_pivovare": "943def61-1dce-45c2-9e40-6454bbad65fc",
+    "tip_pivovare": {
+      "opis": "Mala nezavisna pivovara",
+      "naziv": "micro",
+      "id_tipa": 1
+    },
+    "web_stranica": "http://www.halvemaan.be/",
+    "godina_osnutka": 2014,
+    "ima_razgledavanje": false,
+    "godisnja_proizvodnja_hl": 7200
+  },
+  {
+    "piva": [
+      {
+        "ibu": 24,
+        "stil": { "naziv": "Lager", "id_stila": 1 },
+        "naziv": "Stone Orchard Lager",
+        "id_piva": 3,
+        "boja_ebc": 11,
+        "alkohol_postotak": 4.4,
+        "godina_lansiranja": 2016
+      },
+      {
+        "ibu": 42,
+        "stil": { "naziv": "Pale Ale", "id_stila": 4 },
+        "naziv": "Paper Moon Pale Ale",
+        "id_piva": 16,
+        "boja_ebc": 14,
+        "alkohol_postotak": 5.6,
+        "godina_lansiranja": 2008
+      }
+    ],
+    "naziv": "Paulaner",
+    "telefon": "+49 89 5446117",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "München",
+          "regija": {
+            "naziv": "Bayern",
+            "drzava": { "naziv": "Germany", "iso_kod": "DE", "id_drzave": 2 },
+            "id_regije": 6
+          },
+          "id_grada": 9
+        },
+        "adresa_1": "Hochstraße 77",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": 11.583204,
+        "geo_sirina": 48.121522,
+        "id_lokacije": 9,
+        "postanski_broj": "81541"
+      },
+      {
+        "grad": {
+          "naziv": "München",
+          "regija": {
+            "naziv": "Bayern",
+            "drzava": { "naziv": "Germany", "iso_kod": "DE", "id_drzave": 2 },
+            "id_regije": 6
+          },
+          "id_grada": 9
+        },
+        "adresa_1": "Kapuzinerplatz 5",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": 11.558832,
+        "geo_sirina": 48.126305,
+        "id_lokacije": 10,
+        "postanski_broj": "80337"
+      }
+    ],
+    "id_pivovare": "59b8d88c-8628-46d1-bf5e-999cd8e158b4",
+    "tip_pivovare": {
+      "opis": "Pivovara s pivnicom ili restoranom",
+      "naziv": "brewpub",
+      "id_tipa": 4
+    },
+    "web_stranica": "http://www.paulaner.de",
+    "godina_osnutka": 2006,
+    "ima_razgledavanje": false,
+    "godisnja_proizvodnja_hl": 3200
+  },
+  {
+    "piva": [
+      {
+        "ibu": 52,
+        "stil": { "naziv": "IPA", "id_stila": 3 },
+        "naziv": "Salt Cove IPA",
+        "id_piva": 10,
+        "boja_ebc": 24,
+        "alkohol_postotak": 6.7,
+        "godina_lansiranja": 2015
+      },
+      {
+        "ibu": 14,
+        "stil": { "naziv": "Weissbier", "id_stila": 7 },
+        "naziv": "Tin Roof Weissbier",
+        "id_piva": 29,
+        "boja_ebc": 12,
+        "alkohol_postotak": 5.6,
+        "godina_lansiranja": 2012
+      }
+    ],
+    "naziv": "Sierra Nevada Brewing Co",
+    "telefon": "5308933520",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "Chico",
+          "regija": {
+            "naziv": "California",
+            "drzava": {
+              "naziv": "United States",
+              "iso_kod": "US",
+              "id_drzave": 1
+            },
+            "id_regije": 5
+          },
+          "id_grada": 3
+        },
+        "adresa_1": "1075 E 20th St",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -121.80988,
+        "geo_sirina": 39.725763,
+        "id_lokacije": 3,
+        "postanski_broj": "95928-6722"
+      }
+    ],
+    "id_pivovare": "70e66be3-fd92-4db0-86f3-0f05807cc4e2",
+    "tip_pivovare": {
+      "opis": "Regionalna pivovara",
+      "naziv": "regional",
+      "id_tipa": 3
+    },
+    "web_stranica": "http://www.sierranevada.com",
+    "godina_osnutka": 1977,
+    "ima_razgledavanje": false,
+    "godisnja_proizvodnja_hl": 44700
+  },
+  {
+    "piva": [
+      {
+        "ibu": 57,
+        "stil": { "naziv": "IPA", "id_stila": 3 },
+        "naziv": "Copper Hour IPA",
+        "id_piva": 12,
+        "boja_ebc": 19,
+        "alkohol_postotak": 6.8,
+        "godina_lansiranja": 1992
+      },
+      {
+        "ibu": 28,
+        "stil": { "naziv": "Porter", "id_stila": 6 },
+        "naziv": "Northern Lights Porter",
+        "id_piva": 24,
+        "boja_ebc": 54,
+        "alkohol_postotak": 5.2,
+        "godina_lansiranja": 2020
+      },
+      {
+        "ibu": 9,
+        "stil": { "naziv": "Gose", "id_stila": 10 },
+        "naziv": "Bramble Path Gose",
+        "id_piva": 38,
+        "boja_ebc": 14,
+        "alkohol_postotak": 4.5,
+        "godina_lansiranja": 1996
+      }
+    ],
+    "naziv": "Stone Brewing Co",
+    "telefon": "7602947866",
+    "lokacije": [
+      {
+        "grad": {
+          "naziv": "San Diego",
+          "regija": {
+            "naziv": "California",
+            "drzava": {
+              "naziv": "United States",
+              "iso_kod": "US",
+              "id_drzave": 1
+            },
+            "id_regije": 5
+          },
+          "id_grada": 6
+        },
+        "adresa_1": "2816 Historic Decatur Rd Ste 116",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -117.21157,
+        "geo_sirina": 32.740524,
+        "id_lokacije": 6,
+        "postanski_broj": "92106-6164"
+      },
+      {
+        "grad": {
+          "naziv": "Richmond",
+          "regija": {
+            "naziv": "Virginia",
+            "drzava": {
+              "naziv": "United States",
+              "iso_kod": "US",
+              "id_drzave": 1
+            },
+            "id_regije": 4
+          },
+          "id_grada": 7
+        },
+        "adresa_1": "4300 Williamsburg Ave",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -77.414763,
+        "geo_sirina": 37.52411,
+        "id_lokacije": 7,
+        "postanski_broj": "23231-1225"
+      },
+      {
+        "grad": {
+          "naziv": "Escondido",
+          "regija": {
+            "naziv": "California",
+            "drzava": {
+              "naziv": "United States",
+              "iso_kod": "US",
+              "id_drzave": 1
+            },
+            "id_regije": 5
+          },
+          "id_grada": 8
+        },
+        "adresa_1": "2120 Harmony Grove Rd",
+        "adresa_2": null,
+        "adresa_3": null,
+        "geo_duzina": -117.11565,
+        "geo_sirina": 33.109969,
+        "id_lokacije": 8,
+        "postanski_broj": "92029-2053"
+      }
+    ],
+    "id_pivovare": "d955991a-9377-4f2c-baf3-b561a72bf895",
+    "tip_pivovare": {
+      "opis": "Regionalna pivovara",
+      "naziv": "regional",
+      "id_tipa": 3
+    },
+    "web_stranica": "http://www.stonebrewing.com",
+    "godina_osnutka": 1982,
+    "ima_razgledavanje": true,
+    "godisnja_proizvodnja_hl": 73000
+  }
+]
