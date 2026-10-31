@@ -7,7 +7,7 @@ Podaci o pivovarama i lokacijama preuzeti su iz [Open Brewery DB-a](https://www.
 ## Osnovni podaci
 
 - Naziv skupa: Pivovare i njihove lokacije
-- Autor: [upiši ime i prezime]
+- Autor: Marko Zvonar
 - Verzija: 1.0
 - Namjena: prva laboratorijska vježba iz Otvorenog računarstva
 - Izvor: Open Brewery DB, uz dodatne izmišljene podatke
