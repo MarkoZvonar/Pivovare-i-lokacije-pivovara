@@ -1,0 +1,244 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/pivovare/schema.json",
+  "type": "array",
+  "title": "Pivovare i njihove lokacije",
+  "description": "Skup podataka o 16 pivovara iz 10 država, njihovim lokacijama i pivima.",
+  "items": {
+    "type": "object",
+    "title": "Pivovara",
+    "description": "Jedan zapis o pivovari s njezinim lokacijama i pivima.",
+    "properties": {
+      "piva": {
+        "type": "array",
+        "title": "Piva",
+        "description": "Popis izmišljenih piva pripisanih pivovari.",
+        "items": {
+          "type": "object",
+          "title": "Pivo",
+          "description": "Jedan zapis o pivu pivovare.",
+          "properties": {
+            "ibu": {
+              "type": "integer",
+              "title": "Gorčina",
+              "description": "Gorčina piva izražena u IBU jedinicama."
+            },
+            "id_piva": {
+              "type": "integer",
+              "title": "Identifikator piva",
+              "description": "Identifikator piva u bazi podataka."
+            },
+            "boja_ebc": {
+              "type": "integer",
+              "title": "Boja",
+              "description": "Boja piva izražena u EBC jedinicama."
+            },
+            "id_stila": {
+              "type": "integer",
+              "title": "Identifikator stila",
+              "description": "Identifikator stila piva u bazi podataka."
+            },
+            "stil_piva": {
+              "type": "string",
+              "title": "Stil piva",
+              "description": "Naziv stila piva."
+            },
+            "naziv_piva": {
+              "type": "string",
+              "title": "Naziv piva",
+              "description": "Ime piva."
+            },
+            "alkohol_postotak": {
+              "type": "number",
+              "title": "Udio alkohola",
+              "description": "Volumni udio alkohola izražen u postocima."
+            },
+            "godina_lansiranja": {
+              "type": "integer",
+              "title": "Godina lansiranja",
+              "description": "Godina predstavljanja piva."
+            },
+            "zemlja_podrijetla": {
+              "type": "string",
+              "title": "Zemlja podrijetla stila",
+              "description": "Zemlja iz koje potječe stil piva."
+            }
+          },
+          "required": [
+            "ibu",
+            "id_piva",
+            "boja_ebc",
+            "id_stila",
+            "stil_piva",
+            "naziv_piva",
+            "alkohol_postotak",
+            "godina_lansiranja",
+            "zemlja_podrijetla"
+          ]
+        }
+      },
+      "naziv": {
+        "type": "string",
+        "title": "Naziv pivovare",
+        "description": "Ime pivovare."
+      },
+      "id_tipa": {
+        "type": "integer",
+        "title": "Identifikator tipa",
+        "description": "Identifikator tipa pivovare u bazi podataka."
+      },
+      "telefon": {
+        "type": "string",
+        "title": "Telefon",
+        "description": "Kontaktni telefonski broj pivovare."
+      },
+      "lokacije": {
+        "type": "array",
+        "title": "Lokacije",
+        "description": "Popis lokacija pivovare.",
+        "items": {
+          "type": "object",
+          "title": "Lokacija",
+          "description": "Jedan zapis o lokaciji pivovare.",
+          "properties": {
+            "grad": {
+              "type": "string",
+              "title": "Grad",
+              "description": "Naziv grada u kojem se nalazi lokacija."
+            },
+            "drzava": {
+              "type": "string",
+              "title": "Država",
+              "description": "Naziv države u kojoj se nalazi lokacija."
+            },
+            "regija": {
+              "type": "string",
+              "title": "Regija",
+              "description": "Naziv regije ili savezne države."
+            },
+            "iso_kod": {
+              "type": "string",
+              "title": "ISO oznaka države",
+              "description": "Dvoslovna oznaka države."
+            },
+            "adresa_1": {
+              "type": "string",
+              "title": "Prvi dio adrese",
+              "description": "Glavni dio adrese lokacije."
+            },
+            "adresa_2": {
+              "type": ["string", "null"],
+              "title": "Drugi dio adrese",
+              "description": "Dodatni dio adrese ako je dostupan."
+            },
+            "adresa_3": {
+              "type": ["string", "null"],
+              "title": "Treći dio adrese",
+              "description": "Dodatni dio adrese ako je dostupan."
+            },
+            "id_grada": {
+              "type": "integer",
+              "title": "Identifikator grada",
+              "description": "Identifikator grada u bazi podataka."
+            },
+            "id_drzave": {
+              "type": "integer",
+              "title": "Identifikator države",
+              "description": "Identifikator države u bazi podataka."
+            },
+            "id_regije": {
+              "type": "integer",
+              "title": "Identifikator regije",
+              "description": "Identifikator regije u bazi podataka."
+            },
+            "geo_duzina": {
+              "type": "number",
+              "title": "Geografska dužina",
+              "description": "Geografska dužina lokacije u decimalnim stupnjevima."
+            },
+            "geo_sirina": {
+              "type": "number",
+              "title": "Geografska širina",
+              "description": "Geografska širina lokacije u decimalnim stupnjevima."
+            },
+            "id_lokacije": {
+              "type": "integer",
+              "title": "Identifikator lokacije",
+              "description": "Identifikator lokacije u bazi podataka."
+            },
+            "postanski_broj": {
+              "type": "string",
+              "title": "Poštanski broj",
+              "description": "Poštanski broj lokacije zapisan kao tekst."
+            }
+          },
+          "required": [
+            "grad",
+            "drzava",
+            "regija",
+            "iso_kod",
+            "adresa_1",
+            "adresa_2",
+            "adresa_3",
+            "id_grada",
+            "id_drzave",
+            "id_regije",
+            "geo_duzina",
+            "geo_sirina",
+            "id_lokacije",
+            "postanski_broj"
+          ]
+        }
+      },
+      "opis_tipa": {
+        "type": "string",
+        "title": "Opis tipa",
+        "description": "Kratak opis tipa pivovare."
+      },
+      "id_pivovare": {
+        "type": "string",
+        "title": "Identifikator pivovare",
+        "description": "Identifikator pivovare iz Open Brewery DB-a."
+      },
+      "tip_pivovare": {
+        "type": "string",
+        "title": "Tip pivovare",
+        "description": "Naziv tipa pivovare, primjerice micro ili brewpub."
+      },
+      "web_stranica": {
+        "type": "string",
+        "title": "Web-stranica",
+        "description": "Adresa web-stranice pivovare."
+      },
+      "godina_osnutka": {
+        "type": "integer",
+        "title": "Godina osnutka",
+        "description": "Izmišljena godina osnutka za potrebe vježbe."
+      },
+      "ima_razgledavanje": {
+        "type": "boolean",
+        "title": "Razgledavanje",
+        "description": "Izmišljeni podatak o mogućnosti razgledavanja pivovare."
+      },
+      "godisnja_proizvodnja_hl": {
+        "type": "integer",
+        "title": "Godišnja proizvodnja",
+        "description": "Izmišljena godišnja proizvodnja u hektolitrima."
+      }
+    },
+    "required": [
+      "piva",
+      "naziv",
+      "id_tipa",
+      "telefon",
+      "lokacije",
+      "opis_tipa",
+      "id_pivovare",
+      "tip_pivovare",
+      "web_stranica",
+      "godina_osnutka",
+      "ima_razgledavanje",
+      "godisnja_proizvodnja_hl"
+    ]
+  }
+}

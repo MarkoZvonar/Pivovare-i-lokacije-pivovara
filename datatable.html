@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tablica pivovara</title>
+  </head>
+  <body>
+    <h1>Tablica pivovara</h1>
+    <form id="pretraga">
+      <label for="pojam">Tekst za pretragu</label>
+      <input type="text" id="pojam" />
+
+      <label for="polje">Pretraži po</label>
+      <select id="polje">
+        <option value="sve">Sva polja</option>
+        <option value="naziv">Naziv pivovare</option>
+        <option value="godina_osnutka">Godina osnutka</option>
+        <option value="tip_pivovare">Tip pivovare</option>
+        <option value="gradovi">Gradovi</option>
+        <option value="drzave">Države</option>
+        <option value="piva">Piva</option>
+        <option value="stilovi_piva">Stilovi piva</option>
+        <option value="udio_alkohola">Udio alkohola (%)</option>
+      </select>
+
+      <button type="submit">Pretraži</button>
+    </form>
+    <button type="button" id="preuzmiCsv">Preuzmi CSV</button>
+    <button type="button" id="preuzmiJson">Preuzmi JSON</button>
+    <p id="poruka">Učitavanje podataka...</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Naziv pivovare</th>
+          <th scope="col">Godina osnutka</th>
+          <th scope="col">Tip pivovare</th>
+          <th scope="col">Gradovi</th>
+          <th scope="col">Države</th>
+          <th scope="col">Piva</th>
+          <th scope="col">Stilovi piva</th>
+          <th scope="col">Udio alkohola (%)</th>
+        </tr>
+      </thead>
+      <tbody id="redovi"></tbody>
+    </table>
+
+    <script>
+      const obrazac = document.getElementById("pretraga");
+      const unos = document.getElementById("pojam");
+      const izbor = document.getElementById("polje");
+      const poruka = document.getElementById("poruka");
+      const redovi = document.getElementById("redovi");
+
+      let svePivovare = [];
+      let prikazanePivovare = [];
+
+      function prikaziPivovare(pivovare) {
+        // Tablica i preuzimanja koriste isti popis redaka.
+        prikazanePivovare = pivovare;
+        redovi.textContent = "";
+
+        for (const pivovara of pivovare) {
+          const redak = redovi.insertRow();
+          redak.insertCell().textContent = pivovara.naziv;
+          redak.insertCell().textContent = pivovara.godina_osnutka ?? "";
+          redak.insertCell().textContent = pivovara.tip_pivovare;
+          redak.insertCell().textContent = pivovara.gradovi;
+          redak.insertCell().textContent = pivovara.drzave;
+          redak.insertCell().textContent = pivovara.piva;
+          redak.insertCell().textContent = pivovara.stilovi_piva;
+          redak.insertCell().textContent = pivovara.udio_alkohola;
+        }
+
+        poruka.textContent = "Broj prikazanih pivovara: " + pivovare.length;
+      }
+
+      obrazac.addEventListener("submit", function (dogadaj) {
+        // Obradi pretragu bez ponovnog učitavanja stranice.
+        dogadaj.preventDefault();
+
+        const pojam = unos.value.trim().toLowerCase();
+        const polje = izbor.value;
+
+        if (pojam === "") {
+          prikaziPivovare(svePivovare);
+          return;
+        }
+
+        const rezultati = svePivovare.filter(function (pivovara) {
+          // Kad je odabrano jedno polje, njegovo ime iz izbornika služi kao ključ.
+          const vrijednosti = polje === "sve" ? Object.values(pivovara) : [pivovara[polje]];
+          return vrijednosti.some(function (vrijednost) {
+            return String(vrijednost ?? "").toLowerCase().includes(pojam);
+          });
+        });
+
+        prikaziPivovare(rezultati);
+      });
+
+      async function ucitajPivovare() {
+        try {
+          const odgovor = await fetch("/api/pivovare");
+
+          if (!odgovor.ok) {
+            throw new Error("Dohvaćanje nije uspjelo.");
+          }
+
+          svePivovare = await odgovor.json();
+          prikaziPivovare(svePivovare);
+        } catch (greska) {
+          poruka.textContent = "Pivovare se nisu mogle učitati.";
+        }
+      }
+
+      function preuzmiDatoteku(tekst, naziv, format) {
+        // Blob čuva sadržaj datoteke, a URL joj daje privremenu adresu.
+        const datoteka = new Blob([tekst], { type: format });
+        const adresa = URL.createObjectURL(datoteka);
+
+        // Preglednik preuzima datoteku kad kliknemo ovu poveznicu.
+        const poveznica = document.createElement("a");
+        poveznica.href = adresa;
+        poveznica.download = naziv;
+        poveznica.click();
+
+        // Oslobodi adresu nakon što preglednik pokrene preuzimanje.
+        setTimeout(() => URL.revokeObjectURL(adresa), 1000);
+      }
+
+      document.getElementById("preuzmiJson").addEventListener("click", function () {
+        // Pretvori popis objekata u JSON tekst s uvlakom od dva razmaka.
+        const json = JSON.stringify(prikazanePivovare, null, 2);
+        preuzmiDatoteku(json, "filtrirane_pivovare.json", "application/json");
+      });
+
+      document.getElementById("preuzmiCsv").addEventListener("click", function () {
+        const stupci = [
+          "naziv", "godina_osnutka", "tip_pivovare", "gradovi",
+          "drzave", "piva", "stilovi_piva", "udio_alkohola",
+        ];
+        let csv = stupci.join(",") + "\r\n";
+
+        for (const pivovara of prikazanePivovare) {
+          const vrijednosti = [];
+          for (const stupac of stupci) {
+            const vrijednost = pivovara[stupac];
+            if (typeof vrijednost === "string") {
+              // Navodnici čuvaju zareze unutar jedne ćelije.
+              vrijednosti.push('"' + vrijednost.replaceAll('"', '""') + '"');
+            } else {
+              vrijednosti.push(vrijednost ?? "");
+            }
+          }
+          csv += vrijednosti.join(",") + "\r\n";
+        }
+
+        preuzmiDatoteku(csv, "filtrirane_pivovare.csv", "text/csv;charset=utf-8");
+      });
+
+      ucitajPivovare();
+    </script>
+  </body>
+</html>
