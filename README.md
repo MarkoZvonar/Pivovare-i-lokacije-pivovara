@@ -1,6 +1,6 @@
 # Pivovare i njihove lokacije
 
-Ovaj skup podataka izrađen je za prvu laboratorijsku vježbu iz Otvorenog računarstva. Sadrži podatke o 16 pivovara iz 10 država, njihovim lokacijama i pivima. Glavni entitet je pivovara, kojoj pripadaju lokacije i piva.
+Ovaj skup podataka izrađen je za prvu laboratorijsku vježbu iz Otvorenog računarstva. Sadrži podatke o 16 pivovara iz 10 država, njihovim lokacijama i pivima. U drugoj vježbi dodano je web-sučelje za pregled, pretragu i preuzimanje podataka.
 
 Podaci o pivovarama i lokacijama preuzeti su iz [Open Brewery DB-a](https://www.openbrewerydb.org/). Podaci o pivima su izmišljeni i služe za potrebe vježbe. U skripti punjenja baze kao izmišljeni su označeni i godina osnutka, godišnja proizvodnja te mogućnost razgledavanja pivovare. Te vrijednosti ne treba koristiti kao stvarne podatke o pivovarama.
 
@@ -19,6 +19,38 @@ Podaci o pivovarama i lokacijama preuzeti su iz [Open Brewery DB-a](https://www.
 - Opseg: 16 pivovara, 20 lokacija i 38 piva
 - Prostorni obuhvat: Sjedinjene Američke Države, Njemačka, Irska, Nizozemska, Belgija, Kanada, Austrija, Australija, Novi Zeland i Portugal
 - Način izvoza: automatizirani SQL upiti s naredbom `\copy` u alatu `psql`
+
+## Pokretanje web-sučelja
+
+Za pokretanje su potrebni Node.js s npm-om i pokrenut PostgreSQL 18. Naredbe pokreni iz mape projekta.
+
+### Priprema baze
+
+Ako već imaš bazu `pivovare` s podacima iz prve vježbe, prijeđi na pokretanje servera. Za novu bazu pokreni:
+
+```bash
+createdb -h 127.0.0.1 -U postgres pivovare
+psql -h 127.0.0.1 -U postgres -d pivovare -v ON_ERROR_STOP=1 -f pivovare_dump.sql
+```
+
+### Pokretanje servera
+
+```bash
+npm ci
+npm start
+```
+
+`npm ci` instalira pakete iz `package-lock.json`, a `npm start` pokreće server. Ostavi terminal otvoren i u pregledniku otvori [početnu stranicu](http://127.0.0.1:3000/). Server zaustavi s **Ctrl+C**.
+
+Server se prema zadanim postavkama spaja na bazu `pivovare` kao korisnik `postgres` na adresi `127.0.0.1:5432`. Ako koristiš druge postavke, prije pokretanja postavi odgovarajuće varijable `PGDATABASE`, `PGUSER`, `PGHOST` ili `PGPORT`. Ako baza traži lozinku, postavi i `PGPASSWORD` u terminalu.
+
+## Pregled, pretraga i preuzimanje
+
+Na početnoj stranici možeš preuzeti cijeli skup u formatima CSV i JSON te otvoriti [JSON shemu](schema.json) koja opisuje strukturu i tipove podataka u punom JSON izvozu.
+
+Poveznica **Otvori tablicu pivovara** vodi na zasebnu stranicu. Ona preko `/api/pivovare` učitava podatke iz PostgreSQL-a i prikazuje jedan redak po pivovari. Možeš pretražiti pojedini stupac ili svih osam prikazanih stupaca uz opciju **Sva polja**. Gumbi za CSV i JSON preuzimaju retke iz trenutačnog prikaza.
+
+Za probu odaberi **Piva**, upiši `Velvet Hour Amber Ale` i klikni **Pretraži**. U tablici i oba izvoza treba ostati samo **3 Ravens**. Uz **Države** možeš probati `United States`, a uz **Udio alkohola (%)** upiši decimalni broj s točkom, primjerice `5.3`. Za povratak na svih 16 pivovara isprazni unos i ponovno klikni **Pretraži**.
 
 ## Organizacija baze
 
